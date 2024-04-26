@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom style for DatePickerDialog -->
+    <style name="DatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item> <!-- Accent color for selected date -->
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+</resources>

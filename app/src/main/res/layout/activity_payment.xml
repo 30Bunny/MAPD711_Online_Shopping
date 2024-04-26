@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:padding="25dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/form_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contact_heading"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logoImageView"
+                    android:text="Payment Information"
+                    android:textFontWeight="800"
+                    android:textColor="@color/title_color"
+                    android:textAlignment="textStart"
+                    android:textSize="22dp">
+                </TextView>
+
+                <!-- Card Number EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/creditcard_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Credit Card Number"
+                        android:textColor="@color/title_color"
+                        android:textSize="16dp" />
+                    <EditText
+                        android:id="@+id/cardNumberEditText"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/rect_grey"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:hint="Enter Credit Card Number"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <!-- Exp date & CVV EditText -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp">
+                        <TextView
+                            android:id="@+id/exdate_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expiry Date"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="16dp"
+                            android:textColor="@color/title_color" />
+                        <EditText
+                            android:id="@+id/exdateEditText"                android:layout_width="match_parent"
+                            android:background="@drawable/rect_grey"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:textSize="14dp"
+                            android:hint="Enter Expiry Date"
+                            android:inputType="none"
+                            android:focusable="false"
+                            android:clickable="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp">
+                        <TextView
+                            android:id="@+id/cvv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CVV"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="16dp"
+                            android:textColor="@color/title_color" />
+                        <EditText
+                            android:id="@+id/cvvEditText"                android:layout_width="match_parent"
+                            android:background="@drawable/rect_grey"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:textSize="14dp"
+                            android:hint="Enter CVV"
+                            android:inputType="text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+                <!-- Login Button -->
+                <Button
+                    android:id="@+id/PaymentButton"
+                    style="@style/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:text="Make a Payment" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

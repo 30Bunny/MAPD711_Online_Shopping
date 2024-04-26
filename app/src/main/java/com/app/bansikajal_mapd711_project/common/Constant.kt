@@ -1,0 +1,20 @@
+package com.app.bansikajal_mapd711_project.common
+
+const val appSharedPref = "AppSharedPref"
+const val customerID = "CustomerID"
+const val userName = "UserName"
+const val customerName = "CustomerName"
+const val isLogin = "IsLogin"
+const val selectedProduct = "SelectedProduct"
+const val selectedSizeValue = "SelectedSize"
+const val selectedQuantity = "SelectedQuantity"
+const val selectedAddress = "SelectedAddress"
+
+const val kMen = "Mens"
+const val kWomen = "Womens"
+const val kSelfCare = "Self care"
+const val kAccessories = "Accessories"
+const val kKids = "Kids"
+const val kJewellery = "Jewellery"
+const val kHomeAndKitchen = "Home & Kitchen"
+const val kGadgets = "Gadgets"

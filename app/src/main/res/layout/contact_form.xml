@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_login.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:padding="25dp">
+
+        <LinearLayout
+            android:id="@+id/form_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contact_heading"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logoImageView"
+                android:text="Contact Information"
+                android:textFontWeight="800"
+                android:textColor="@color/title_color"
+                android:textAlignment="textStart"
+                android:textSize="22dp">
+            </TextView>
+
+            <!-- Username EditText -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/username_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/title_color" />
+                <EditText
+                    android:id="@+id/usernameEditText"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rect_grey"
+                    android:layout_below="@id/username_title"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:hint="Enter Email"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/delivery_heading"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logoImageView"
+                android:text="Delivery Address"
+                android:textFontWeight="800"
+                android:textColor="@color/title_color"
+                android:textAlignment="textStart"
+                android:textSize="22dp">
+            </TextView>
+
+            <!-- Username EditText -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/firstname_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="First Name"
+                        android:textColor="@color/title_color"
+                        android:textSize="16dp" />
+                    <EditText
+                        android:id="@+id/firstnameEditText"                android:layout_width="match_parent"
+                        android:background="@drawable/rect_grey"
+                        android:layout_below="@id/username_title"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:hint="Enter First Name"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+                    <TextView
+                        android:id="@+id/lastname_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/title_color" />
+                    <EditText
+                        android:id="@+id/lastnameEditText"                android:layout_width="match_parent"
+                        android:background="@drawable/rect_grey"
+                        android:layout_below="@id/username_title"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:hint="Enter Last Name"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Address EditText -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Address"
+                    android:textColor="@color/title_color"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/addressEditText"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rect_grey"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:hint="Enter Address"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- Postal Code and City EditText -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="15dp">
+                    <TextView
+                        android:id="@+id/postalcode_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Postal Code"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/title_color" />
+                    <EditText
+                        android:id="@+id/postalcodeEditText"                android:layout_width="match_parent"
+                        android:background="@drawable/rect_grey"
+                        android:layout_below="@id/username_title"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:hint="Enter Postal Code"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+                    <TextView
+                        android:id="@+id/city_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/title_color" />
+                    <EditText
+                        android:id="@+id/cityEditText"                android:layout_width="match_parent"
+                        android:background="@drawable/rect_grey"
+                        android:layout_below="@id/username_title"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:hint="Enter City"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Country EditText -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/country_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/title_color" />
+                <EditText
+                    android:id="@+id/countryEditText"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rect_grey"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:layout_below="@id/postalcodeEditText"
+                    android:hint="Enter Country"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- Phone EditText -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/phone_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/title_color" />
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rect_grey"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:layout_below="@id/cityEditText"
+                    android:hint="Enter Phone Number"
+                    android:inputType="number" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/continuepayment_button"
+                style="@style/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="16dp"
+                android:text="Continue Payment" />
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+

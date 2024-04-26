@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "364060316263",
+    "firebase_url": "https://onlineshopping-c7375-default-rtdb.firebaseio.com",
+    "project_id": "onlineshopping-c7375",
+    "storage_bucket": "onlineshopping-c7375.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364060316263:android:389cfc29d89f95af2cfac2",
+        "android_client_info": {
+          "package_name": "com.app.bansikajal_mapd711_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwi3wNzDSJALKTfX50eDy_SHZRgTDNywo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
